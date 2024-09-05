@@ -15,20 +15,23 @@ public class Main {
         char
          */
         //typ zlozony - obiekt ktory ma walansosci i metody, z wielkiej litery
-        int wylosowanaLiczba = (int)(Math.random()*10+1);//rzutowanie
+        int wylosowanaLiczba = (int)(Math.random()*100+1);//rzutowanie
 
         System.out.println(wylosowanaLiczba);
 
         System.out.println("Zgadnij liczbę");
         Scanner klawiatura = new Scanner(System.in);
         int wpisanaLiczba = klawiatura.nextInt();
-
+        //instrukcja warunkowa
         if(wpisanaLiczba == wylosowanaLiczba){
             System.out.println("Gratulacje wygrana");
         }
         else {
             System.out.println("Pudło");
         }
-
+        //wyrażenie warunkowe
+        int roznica = wylosowanaLiczba>wpisanaLiczba ?
+                wylosowanaLiczba-wpisanaLiczba : wpisanaLiczba - wylosowanaLiczba;
+        roznica = roznica/10;//dzielenie całkowite
     }
 }
