@@ -7,7 +7,7 @@ public class Main {
         System.out.println("Witamy na lekcjach programowania");
         //typ prosty - tylko wartośc, z małej litery
         //typ zlozony - obiekt ktory ma walansosci i metody, z wielkiej litery
-        double wylosowanaLiczba = Math.random()*10+1;
+        int wylosowanaLiczba = (int)(Math.random()*10+1);//rzutowanie
 
         System.out.println(wylosowanaLiczba);
     }
