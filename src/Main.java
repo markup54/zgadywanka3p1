@@ -33,5 +33,19 @@ public class Main {
         int roznica = wylosowanaLiczba>wpisanaLiczba ?
                 wylosowanaLiczba-wpisanaLiczba : wpisanaLiczba - wylosowanaLiczba;
         roznica = roznica/10;//dzielenie całkowite
+
+        switch (roznica){
+            case 0:
+                System.out.println("Dobra robota");
+                break;
+            case 1:
+                System.out.println("Bardzo blisko");
+                break;
+            case 2:
+                System.out.println("Blisko");
+                break;
+            default:
+                System.out.println("Słabo");
+        }
     }
 }
