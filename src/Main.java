@@ -63,18 +63,17 @@ public class Main {
             }
         }
         //zgadujemy do skutku
-        System.out.println("Podaj liczbę");
-        wpisanaLiczba = klawiatura.nextInt();
-        while (wylosowanaLiczba != wpisanaLiczba){
-            if(wylosowanaLiczba>wpisanaLiczba){
-                System.out.println("Wpisano za mało");
-            }
-            else{
-                System.out.println("Wpisano za dużo");
-            }
-            System.out.println("Podaj liczbę");
-            wpisanaLiczba = klawiatura.nextInt();
-        }
+       do{
+           System.out.println("Podaj liczbę");
+           wpisanaLiczba = klawiatura.nextInt();
+               if(wylosowanaLiczba>wpisanaLiczba){
+                   System.out.println("Wpisano za mało");
+               }
+               else{
+                   System.out.println("Wpisano za dużo");
+               }
+       }
+        while (wylosowanaLiczba != wpisanaLiczba);
         System.out.println("Gratulacje wygrana");
     }
 }
